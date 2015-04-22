@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+<meta charset="UTF-8">
+<title>人狼タイマー</title>
+</head>
+<body>
+  <div align="center">
+	  <canvas id="a_canvas" width="800" height="400" style="background-color: #191970;">
+		</canvas><br>
+		
+    <input type="text" id="min" value="">分 
+    <input type="text" id="sec" value="">秒<br><br>
+    　　残り<input type="text" id="min_warn1" value="">分 
+    <input type="text" id="sec_warn1" value="">秒で鳴らす<br>
+    　　残り<input type="text" id="min_warn2" value="">分 
+    <input type="text" id="sec_warn2" value="">秒で鳴らす<br>
+    　　残り<input type="text" id="min_warn3" value="">分 
+    <input type="text" id="sec_warn3" value="">秒で鳴らす<br>
+    　　残り<input type="text" id="min_warn4" value="">分 
+    <input type="text" id="sec_warn4" value="">秒で鳴らす<br>
+    　　残り<input type="text" id="min_warn5" value="">分 
+    <input type="text" id="sec_warn5" value="">秒で鳴らす<br><br>
+    
+    <input type="button" value="セット" onclick="setTime()">
+    
+  </div>
+  <audio id="endsound" preload="auto">
+    <source src="./hoge.mp3" type="audio/mp3">
+    <source src="./hoge.wav" type="audio/wav">
+  </audio>
+  <audio id="warningsound1" preload="auto">
+    <source src="./fuga.mp3" type="audio/mp3">
+    <source src="./fuga.wav" type="audio/wav">
+  </audio>
+  <audio id="warningsound2" preload="auto">
+    <source src="./fuga.mp3" type="audio/mp3">
+    <source src="./fuga.wav" type="audio/wav">
+  </audio>
+  <audio id="warningsound3" preload="auto">
+    <source src="./fuga.mp3" type="audio/mp3">
+    <source src="./fuga.wav" type="audio/wav">
+  </audio>
+  <audio id="warningsound4" preload="auto">
+    <source src="./fuga.mp3" type="audio/mp3">
+    <source src="./fuga.wav" type="audio/wav">
+  </audio>
+  <audio id="warningsound5" preload="auto">
+    <source src="./fuga.mp3" type="audio/mp3">
+    <source src="./fuga.wav" type="audio/wav">
+  </audio>
+  
+	<script type="text/javascript" src="timer.js"></script>
+</body>
+</html>
+<!-- 製作者：ている -->
